@@ -1,0 +1,38 @@
+<?php
+$main = new main;
+
+switch ($main->method) {
+	case 'POST':
+
+		$post   = $main->post();
+		$status = $post['status'];
+		unset($post['status']);
+
+		switch ($status) {
+
+		case 'upload_profile':
+
+				break;
+		case 'login';
+
+				break;
+
+		case 'msg':
+
+				break;
+		case 'checkNewMessage':
+
+				break;
+
+		case 'allMsg':
+
+				break;
+		}
+		exit;
+		break;
+
+	case 'GET':
+		break;
+}
+
+?>
